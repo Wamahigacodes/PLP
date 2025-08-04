@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #faf5ff; /* Light purple background */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #9c27b0, #e91e63); /* Purple to pink gradient */
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+nav {
+    background: #7b1fa2; /* Deep purple */
+    padding: 1.2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffc0cb; /* Light pink hover effect */
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #7b1fa2; /* Deep purple */
+    color: white;
+    margin-top: 2rem;
+}
+
+.hobby {
+    border-left: 4px solid #e91e63; /* Pink accent */
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+}
+
+.hobby:hover {
+    background: #fce4ec; /* Light pink hover */
+}
+
+h1, h2, h3 {
+    color: #7b1fa2; /* Purple headers */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
