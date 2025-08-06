@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example page demonstrating HTML5 lists, tables, media, and forms">
+    <title>HTML5 Features Demonstration</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Features Demonstration</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lists">
+            <h2>List Examples</h2>
+            
+            <article>
+                <h3>Unordered List (Features)</h3>
+                <ul>
+                    <li>Semantic HTML5 elements</li>
+                    <li>Accessible forms</li>
+                    <li>Native validation</li>
+                    <li>Media embedding</li>
+                </ul>
+            </article>
+            
+            <article>
+                <h3>Ordered List (Steps)</h3>
+                <ol>
+                    <li>Review the requirements</li>
+                    <li>Plan your HTML structure</li>
+                    <li>Implement semantic markup</li>
+                    <li>Test for accessibility</li>
+                </ol>
+            </article>
+            
+            <article>
+                <h3>Description List (Definitions)</h3>
+                <dl>
+                    <dt>HTML5</dt>
+                    <dd>The fifth and current major version of HTML</dd>
+                    
+                    <dt>Semantic</dt>
+                    <dd>Elements that clearly describe their meaning to browsers and developers</dd>
+                    
+                    <dt>ARIA</dt>
+                    <dd>Accessible Rich Internet Applications - helps make web content more accessible</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section id="tables">
+            <h2>Table Example</h2>
+            <table border="1">
+                <caption>Monthly Budget Plan</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Allocated</th>
+                        <th scope="col">Spent</th>
+                        <th scope="col">Remaining</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Housing</th>
+                        <td>1,200KES</td>
+                        <td>1,200KES</td>
+                        <td>0KES</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Food</th>
+                        <td>600KES</td>
+                        <td>450KES</td>
+                        <td>150KES</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Transportation</th>
+                        <td>300KES</td>
+                        <td>280KES</td>
+                        <td>20KES</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td>2,100KES</td>
+                        <td>1,930KES</td>
+                        <td>170KES</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="media">
+            <h2>Media Examples</h2>
+            
+            <article>
+                <h3>Image</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/600x400" alt="Placeholder image demonstrating proper alt text" width="600" height="400">
+                    <figcaption>Example image with proper alternative text</figcaption>
+                </figure>
+            </article>
+            
+            <article>
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="sample.mp3" type="audio/mpeg">
+                    <source src="sample.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>A sample audio clip demonstrating HTML5 audio</p>
+            </article>
+            
+            <article>
+                <h3>Video</h3>
+                <video controls width="600" poster="https://via.placeholder.com/600x400">
+                    <source src="sample.mp4" type="video/mp4">
+                    <source src="sample.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p>A sample video demonstrating HTML5 video</p>
+            </article>
+        </section>
+
+        <section id="form">
+            <h2>Registration Form</h2>
+            <form action="/submit" method="post" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div>
+                        <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="fullname" name="fullname" required minlength="2" maxlength="100" 
+                               placeholder="Enter your full name" autocomplete="name">
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" required 
+                               placeholder="example@domain.com" autocomplete="email">
+                    </div>
+                    
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" 
+                               placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <small>Format: 123-456-7890</small>
+                    </div>
+                    
+                    <div>
+                        <label for="birthdate">Date of Birth</label>
+                        <input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2023-12-31">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Account Details</legend>
+                    
+                    <div>
+                        <label for="username">Username <span aria-hidden="true">*</span></label>
+                        <input type="text" id="username" name="username" required minlength="4" maxlength="20" 
+                               placeholder="Choose a username" autocomplete="username">
+                    </div>
+                    
+                    <div>
+                        <label for="password">Password <span aria-hidden="true">*</span></label>
+                        <input type="password" id="password" name="password" required minlength="8" 
+                               placeholder="Create a password" autocomplete="new-password">
+                        <small>Minimum 8 characters</small>
+                    </div>
+                    
+                    <div>
+                        <label for="confirm-password">Confirm Password <span aria-hidden="true">*</span></label>
+                        <input type="password" id="confirm-password" name="confirm-password" required 
+                               placeholder="Re-enter your password" autocomplete="new-password">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <div>
+                        <label>Subscribe to:</label>
+                        <div>
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <label for="newsletter">Newsletter</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="promotions" name="promotions">
+                            <label for="promotions">Promotions</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="communication">Preferred Communication</label>
+                        <select id="communication" name="communication">
+                            <option value="">Select an option</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                            <option value="mail">Postal Mail</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label>Membership Level</label>
+                        <div>
+                            <input type="radio" id="basic" name="membership" value="basic" checked>
+                            <label for="basic">Basic (Free)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="premium" name="membership" value="premium">
+                            <label for="premium">Premium ($9.99/month)</label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div>
+                        <label for="bio">Short Bio</label>
+                        <textarea id="bio" name="bio" rows="4" maxlength="500" 
+                                  placeholder="Tell us about yourself (max 500 characters)"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label for="website">Website</label>
+                        <input type="url" id="website" name="website" 
+                               placeholder="https://example.com">
+                    </div>
+                    
+                    <div>
+                        <label for="profile-pic">Profile Picture</label>
+                        <input type="file" id="profile-pic" name="profile-pic" 
+                               accept="image/png, image/jpeg">
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                </div>
+                
+                <div>
+                    <button type="submit">Register</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML5 Features Demonstration. All rights reserved.</p>
+        <address>
+            Contact: <a href="mailto:info@example.com">info@example.com</a>
+        </address>
+    </footer>
+</body>
+</html>
